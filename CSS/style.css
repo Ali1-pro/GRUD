@@ -1,0 +1,46 @@
+body {
+    background-color: #f7ecde;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    color: rgb(53, 46, 40);
+    font-size: 50px;
+    
+}
+h1::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    left: 40%;
+    bottom: 50px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+h1:hover::after{
+    height: 25%;
+}
+.my-continer{
+    font-family: "PT Sans Caption", sans-serif;
+    border-top: dotted 2px black;
+    border-bottom: dotted 2px black;
+}
+.my-btn{
+    background-color: #bb4120;
+}
+.my-btn:hover{
+    background-color: #a03315;
+}
+.mine-color{
+background-color: #9eb23b;
+}
+h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Righteous", cursive;
+}
+.my-btnn:hover{
+ background-color: #8a9e23;;
+}
