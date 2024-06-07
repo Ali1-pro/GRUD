@@ -5,7 +5,7 @@ h1{
     font-family: "Pacifico", cursive;
     color: rgb(53, 46, 40);
     font-size: 50px;
-    
+    width: 25%;
 }
 h1::after{
     content: "";
