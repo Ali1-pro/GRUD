@@ -1,8 +1,10 @@
 var siteNameInput = document.getElementById('siteName')
 var siteUrlInput = document.getElementById('siteUrl')
-var bookContiner =[];
-if(localStorage.getItem("book") !== null){
-    bookContiner = JSON.parse(localStorage.getItem("Book"));
+var bookContiner ;
+if(localStorage.getItem("book") == null){
+    bookContiner = [];
+}else {
+    bookContiner = JSON.parse(localStorage.getItem("book"));
     displayBook();
 }
 function addBook() {
@@ -34,5 +36,6 @@ document.getElementById('my-table').innerHTML = crtona;
 function Delete(deleteook){
     bookContiner.splice(deleteook,1)
     console.log(bookContiner);
+    localStorage.setItem("book",JSON.stringify(bookContiner));
     displayBook();
 }
